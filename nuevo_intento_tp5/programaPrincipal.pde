@@ -6,7 +6,7 @@ class ProgramaPrincipal {
   PImage imagenJuego; 
   ProgramaPrincipal() {
     juego = new Juego();
-    creditos = new Creditos();
+    creditos = new Creditos(this);
     ayuda = new Ayuda();
     pantalla = 1;
     imagenJuego = loadImage("buscaminascopia.png");

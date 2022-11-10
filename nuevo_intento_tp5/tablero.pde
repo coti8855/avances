@@ -1,19 +1,14 @@
 class Tablero {
   int cantCasillas;
-  Casilla [][] casillas;
+  Casilla [][] casillas; 
   
   Tablero(int _cantCasillas) {
-    cantCasillas = _cantCasillas;
-    
-    casillas = new Casilla [cantCasillas][cantCasillas];
-    
-    int tam = (width-25)/cantCasillas;
-    
+    cantCasillas = _cantCasillas;   
+    casillas = new Casilla [cantCasillas][cantCasillas];    
+    int tam = (width-25)/cantCasillas;    
     for (int i = 0; i < cantCasillas; i++) {
       for (int j = 0; j < cantCasillas; j++) {
-        
-          casillas[i][j] = new Casilla(i, j, tam );
-        
+      casillas[i][j] = new Casilla(i, j, tam );       
       }
     }
   }
@@ -32,5 +27,4 @@ class Tablero {
       }
     }
     }
-
 }

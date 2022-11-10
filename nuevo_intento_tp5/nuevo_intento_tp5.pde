@@ -1,15 +1,15 @@
-ProgramaPrincipal programaPrincipal;
+ProgramaPrincipal programa;
 
 void setup(){
   size(323, 456);
-  programaPrincipal = new ProgramaPrincipal();
+  programa = new ProgramaPrincipal();
 }
 
 void draw(){
   background(255);
- programaPrincipal.dibujar();
+ programa.dibujar();
 }
 
 void mousePressed(){
-  programaPrincipal.mousePresionado();
+  programa.mousePresionado();
 }

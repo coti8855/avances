@@ -14,8 +14,7 @@ class Casilla {
     posY = _posY;
     tam = _tam;
     imagen1 = loadImage("bloque.png");
-      numeroRandomCasillas = round(random(100));
-   
+    numeroRandomCasillas = round(random(100));
     bomba = new Bomba(posX, posY, tam, numeroRandomCasillas);
     casillaPresionada2 =false;
   }
@@ -27,12 +26,11 @@ class Casilla {
    image(imagen1, (posX+0.7) * tam, (posY+7) * tam, tam, tam);
     }else{
    bomba.dibujar(); 
-  }
-   if( numeroRandomCasillas < 30){
+    }if( numeroRandomCasillas < 30){
         casillaPresionada = true; 
-  } 
-  
+    }  
   }
+  
 void mousePresionado(){
     distancia = dist(mouseX, mouseY, (posX+0.7) *tam  + tam/2, (posY+7) *tam + tam/2 );    
     if (distancia < tam/2 && casillaPresionada == true ){
