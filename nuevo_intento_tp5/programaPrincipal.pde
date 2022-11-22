@@ -23,6 +23,8 @@ class ProgramaPrincipal {
     }
     
   }
+  
+  
    void mousePresionado(){
     if (mouseX > 0 && mouseX < 78 &&  mouseY > 0  &&  mouseY < 40){
     pantalla = 1;

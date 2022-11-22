@@ -2,22 +2,30 @@ class Bomba {
   int posX;
   int posY;
   int tam;
+   ProgramaPrincipal programaPrincipal;
   PImage imagen1;
   PImage imagen2;
    float  numeroRandomCasillas;
-  Bomba(int _posX, int _posY, int _tam, float numeroRandom) {
+   int pantalla;
+  Bomba(int _posX, int _posY, int _tam) {
     posX = _posX;
     posY = _posY;
     tam = _tam;
-    numeroRandomCasillas = numeroRandom;
+
     imagen1 = loadImage("bloque.png");
     imagen2 = loadImage("bomba.png");
   }
+  
+  
 
   void dibujar() {
-    if( numeroRandomCasillas < 30){
-    image(imagen2, (posX+0.7) * tam, (posY+7) * tam, tam, tam);
-    }
-  
+    image(imagen2, (posX* tam)+15, (posY * tam)+146, tam, tam);
+    
   }
+  
+   void mousePresionado(){
+    if (mouseX > 0 && mouseX < 78 &&  mouseY > 0  &&  mouseY < 40){
+    pantalla = 1;
+    } 
+   }
 }
