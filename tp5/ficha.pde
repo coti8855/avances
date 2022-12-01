@@ -19,6 +19,7 @@ class Bomba {
   
 
   void dibujar() {
+    
     image(imagen2, (posX* tam)+15, (posY * tam)+146, tam, tam);
  mousePresionado();
   }

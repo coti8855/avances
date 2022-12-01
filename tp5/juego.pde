@@ -3,10 +3,15 @@ class Juego {
   int pantalla;
   PImage imagenJuego; 
   Juego() {
-    tablero = new Tablero(14);
-    pantalla = 1;
-   imagenJuego = loadImage("buscaminasLleno.png");
+    iniciar();
   }
+
+ void iniciar(){
+  tablero = new Tablero(14, this);
+    pantalla = 1;
+   imagenJuego = loadImage("buscaminasLleno.png"); 
+   
+ }
 
   void dibujar() {
     tablero.dibujar();
@@ -15,7 +20,7 @@ class Juego {
    void mousePresionado(){
      tablero.mousePresionado();
   }
-  void volverJuego(){
+
   
-}
+  
 }

@@ -20,7 +20,6 @@ class ProgramaPrincipal {
      ayuda.dibujar();
     } if (pantalla == 3){
      creditos.dibujar();
-    }if (pantalla == 4){
     }
     
   }
@@ -33,8 +32,12 @@ class ProgramaPrincipal {
     pantalla = 2;
     } if (mouseX > 140 && mouseX < 250 &&  mouseY > 0  &&  mouseY < 40){
     pantalla = 3;
+    } if (mouseX > 140 && mouseX < 192 &&  mouseY > 70  &&  mouseY < 122){
+    juego.iniciar();
     } 
      juego.mousePresionado();
   }
+  
+ 
 
 }
